@@ -101,11 +101,12 @@
     color: rgb(81, 91, 105);
 }
 .MoreVisSoon ul li img{
-    align-items: center;
-    align-content: center;
+    position: relative;
+    left: 40PX;
     height: 250px;
 }
 .MoreVisSoon{
+    position: relative;
     top: 10px;
     align-items: center;
     align-content: center;
