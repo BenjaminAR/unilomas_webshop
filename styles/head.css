@@ -26,6 +26,7 @@ li{
 }
 #nav ul li:hover{
     cursor: pointer;
+    border-top: 2px solid green;
 }
 #nav ul li a:hover{
     color: rgb(71, 7, 65);
