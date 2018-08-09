@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Uni-lomas</title>
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="styles/head.css">
+    <link rel="stylesheet" href="styles/indexStyle.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="logo"><img src="images/xh.png" ></div>
+            <nav id="menu" class="bg-inverse" align="center">
+                <ul>
+                <li><a href="index.html">Inicio</a></li>  
+                <li><a href="expe.html">Servicios</a></li>
+                <li><a href="hobies.html">Productos</a></li>
+                <li><a href="estudios.html">Nosotros</a></li>   
+                <li><a href="contacto.html">Contacto</a></li>  
+                </ul>
+            </nav>
+    </div>
+    <div class="imgBack">
+        <div class="BoximgBack">
+            <p class="leterTitle">Uni-lomas</p>
+            <img src="images/bluebar.png" alt="">
+            <p class="leterSub">Uniformes de servicio a tu servicio</p>
+        </div>
+    </div>
+    <div class="weAre">
+        <div class="col1">
+            <br>
+            <div class="divCol1Title"><p class="col1Title">Somos uni-lomas</p></div> 
+            <br>
+            <br>
+            <div class="divCol1Sub"><p class="col1Sub">Diseño personalizado a tu imagen</p></div> 
+            <br>
+            <div class="divcol1Paragraph"><p class="col1Paragraph">Lorem ipsum dolor sit amet consectetur 
+                                        adipisicing elit. <br><br> exercitationem cum perferendis
+                                        eligendi molestias, <br><br> sint ullam atque fuga incidunt amet quas</p></div> 
+        </div>
+        <div class="col2">
+            <img class="imgCol2" src="images/x.png">
+        </div>
+    </div>
+    <div class="client">
+        <div class="textClient">
+            <p>Nuestros Clientes</p>
+        </div>
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="images/x.png" alt="">
+                    </li>
+                    <li>
+                        <img src="https://ingresopasivointeligente.com/wp-content/uploads/2014/01/logotipos-de-marcas-y-sus-nombres-nintendo.png" alt="">
+
+                    </li>
+                    <li>
+                        <img src="https://logosmarcas.com/wp-content/uploads/2018/03/Vans-logo.png" alt="">
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <div class="MoreVis">
+                <div class="textClient">
+                    <p>Productos Destacados</p>
+                </div>
+        <div class="MoreVisSoon">
+            <ul>
+                <li><img src="images/x.png" alt=""><a href="#"></a></li>
+                <li><img src="images/x.png" alt=""><a href="#"></a></li>
+                <li><img src="images/x.png" alt=""><a href="#"></a></li>
+                <li><img src="images/x.png" alt=""><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+              touch: true,
+              pauseOnAction: false,
+              pauseOnHover: false,
+          });
+        });
+    </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+        if($(document).scrollTop() > 20) {
+            $('#nav').addClass('shrink');
+        }
+        else {
+        $('#nav').removeClass('shrink');
+        }
+    });
+    });
+      </script>
+</body>
+</html>
