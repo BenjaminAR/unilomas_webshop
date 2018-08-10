@@ -1,30 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Philosopher');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 .imgBack{
     position: relative;
-    background-color: #48d15a73;
-    background-image:  url("https://lab.eldiario.es/estaticos/close.png");
-    background-size: contain;
-    height: 470px;
+    background-color: rgb(199, 196, 36);
+    background-image:  url("http://naroll.com.mx/wp-content/uploads/2018/01/slider1.jpeg");
+    background-size:cover;
+    height: 570px;
     width: 100%;
 }
 .BoximgBack{
     position: absolute;
     height: 100px;
-    top: 180px;
-    left: 13%;
+    top: 310px;
+    left: 10%;
+    
 }
 .leterTitle{
     font-family: 'Philosopher', sans-serif;
     font-size: 80px;
-    color: rgb(255, 255, 255);
+    color: rgb(192, 166, 166);
 }
 .leterSub{
-    color: white;
+    color: rgb(192, 166, 166);
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
 }
 .weAre{
     position: relative;
@@ -100,9 +107,16 @@
     font-family: 'Source Sans Pro', sans-serif;
     color: rgb(81, 91, 105);
 }
+.MoreVisSoon ul{
+    list-style:none;
+    
+}
+.MoreVisSoon ul li{
+    display: inline-block;
+}
 .MoreVisSoon ul li img{
     position: relative;
-    left: 170px;
+    left: 240px;
     height: 250px;
     background-color: rgba(128, 128, 128, 0.438);
 }
@@ -115,8 +129,8 @@
     height: 250px;
     width: 100%;
 }
-@media  (max-width: 600px) {
+@media  (max-width: 419px) {
     .BoximgBack {
-        left: 0%;
+        left: 2%;
     }
 }

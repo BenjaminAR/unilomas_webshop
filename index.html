@@ -2,30 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uni-lomas</title>
     <link href="images/favicon.ico" rel="shortcut icon" />
     <link rel="stylesheet" href="styles/head.css">
     <link rel="stylesheet" href="styles/indexStyle.css">
-    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="main.js"></script>
 </head>
 <body>
-    <div id="nav">
-        <input type="checkbox" id="btn-menu">
-        <label for="btn-menu"><img src="images/menu.png" alt=""></label>
-        <div id="logo"><img src="images/xh.png" ></div>
-            <nav id="menu" class="bg-inverse" align="center">
-                <ul>
-                <li><a href="index.html">Inicio</a></li>  
-                <li><a href="expe.html">Servicios</a></li>
-                <li><a href="hobies.html">Productos</a></li>
-                <li><a href="estudios.html">Nosotros</a></li>   
-                <li><a href="contacto.html">Contacto</a></li>  
-                </ul>
-            </nav>
+<header  id="nav">
+    <div class="menu_bar">
+        <a href="#" class="bt-menu"><img src="images/menu.png" alt=""></a>
     </div>
+
+    <nav id="menu" class="bg-inverse">
+        <div id="logo"><img src="images/xh.png" ></div>
+        <ul>
+            <li><a href="#"></span>Contacto</a></li>
+            <li><a href="#"></span>Nosotros</a></li>
+            <li class="submenu">
+                <a href="#"></span>Productos<span class="caret icon-arrow-down6"></span></a>
+                <ul class="children">
+                    <li><a href="#">Deportivo</a></li>
+                    <li><a href="#">Ejecutivo</a></li>
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="#">Barberias</a></li>
+                    <li><a href="#">Limpiesa</a></li>
+                    <li><a href="#">Prendas</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Inicio</a></li>
+        </ul>
+    </nav>
+</header>
     <div class="imgBack">
         <div class="BoximgBack">        
             <p class="leterTitle">Uni-lomas</p>

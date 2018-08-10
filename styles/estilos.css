@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+.menu_bar {
+    font-family: 'Source Sans Pro', sans-serif;
+	display:none;
+}
+ 
+header nav {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color:transparent;
+}
+
+header nav ul {
+	list-style:none;
+}
+ 
+header nav ul li {
+	display:inline-block;
+    position: relative;
+    float: right;
+    margin-right: 40px;
+}
+ 
+header nav ul li:hover {
+    border-top: 4px solid rgb(71, 7, 65);
+    background-color: rgba(75, 68, 77, 0.486);
+}
+ 
+header nav ul li a {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 27px;
+    color: green;
+	display:block;
+    text-decoration:none;
+	padding:30px 40px;
+}
+header nav ul li a:hover {
+    color: rgb(107, 0, 128);
+}
+header nav ul li a span {
+	margin-right:0px;
+}
+header nav ul li:hover .children {
+	display:block;
+}
+
+header nav ul li .children {
+	display: none;
+	background-color: rgb(214, 203, 203);
+	position: absolute;
+    width: 140%;
+	z-index:1000;
+}
+ 
+header nav ul li .children li {
+	display:block;
+    overflow: hidden;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+}
+ 
+header nav ul li .children li a {
+    padding: 12px;
+    font-size: 19px;
+	display: block;
+}
+#logo {
+    top: 10px;
+    position: absolute;
+    left: 50px;
+    height: 7px;
+    transition: all ease .5s;
+    z-index: 10;
+}
+
+@media screen and (max-width:1058px) {
+
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background:transparent;
+    }
+    #logo{
+        display: none;
+    }
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+        color: rgb(0, 255, 21);
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+    }
+ 
+	.menu_bar img {
+		float: right;
+	}
+ 
+	header nav {
+		width: 80%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+        width: 100%;
+		display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        background-color: rgba(236, 79, 79, 0.842);
+    }
+    header nav ul li:hover {
+        background-color: rgba(236, 49, 49, 0.842);
+	}
+ 
+	header nav ul li a {
+        display: block;
+        font-size: 27px;
+	}
+ 
+	header nav ul li:hover .children {
+		display: none;
+	}
+ 
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+ 
+	header nav ul li .children li a {
+		margin-left: 15px;
+	}
+ 
+	header nav ul li .caret {
+		float: right;
+	}
+}
+@media  (max-width: 1288px) {
+    header nav ul li {
+        margin-right: 30px;
+    }
+}
+@media  (max-width: 1233px) {
+    header nav ul li {
+        margin-right: 20px;
+    }
+}
+@media  (max-width: 1178px) {
+    header nav ul li {
+        margin-right: 10px;
+    }
+}
+@media  (max-width: 1068px) {
+    header nav ul li {
+        margin-right: 0px;
+    }
+}
