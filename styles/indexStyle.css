@@ -10,28 +10,29 @@
 }
 .imgBack{
     position: relative;
-    background-color: rgb(199, 196, 36);
-    background-image:  url("http://naroll.com.mx/wp-content/uploads/2018/01/slider1.jpeg");
-    background-size:cover;
-    height: 570px;
+    background-color: rgb(255, 252, 58);
+    background-image: url('images/backd.jpeg');
+    background-size: cover;
+    height: 670px;
     width: 100%;
 }
 .BoximgBack{
     position: absolute;
-    height: 100px;
-    top: 310px;
+    height: 500px;
+    width: 900px;
+    top: 400px;
     left: 10%;
     
 }
 .leterTitle{
     font-family: 'Philosopher', sans-serif;
-    font-size: 80px;
+    font-size: 100px;
     color: rgb(192, 166, 166);
 }
 .leterSub{
     color: rgb(192, 166, 166);
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 22px;
+    font-size: 25px;
 }
 .weAre{
     position: relative;
@@ -77,18 +78,26 @@
     color:  rgb(81, 91, 105);
 }
 .client{
-  position: relative;
-    top: 130px;
-    height: 70px;
+    position: relative;
+    top: 150px;
+    height: 50px;
     width: 100%;
-  
+}
+.pd{
+   position: relative;
+    font-weight: 700;
+    font-size: 45px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(62, 66, 73);
+    height: 50px;
+    top: 250px;
 }
 .textClient{
     text-align: center;
     font-weight: 700;
     font-size: 45px;
     font-family: 'Source Sans Pro', sans-serif;
-    color: rgb(81, 91, 105);
+    color: rgb(62, 66, 73);
     height: 50px;
     background-color: transparent;
 }
@@ -127,6 +136,63 @@
     align-content: center;
     background-color: rgba(49, 49, 49, 0.548);
     height: 250px;
+    width: 100%;
+}
+
+.cuadroblaco2dad{
+    top: 350px;
+    width: 100%;
+    height: 380px;
+    position: relative;
+    font-size: 100%;
+  }
+  .cuadroBlanco2{
+    float: right;
+    background-color: rgba(204, 52, 52, 0.548);
+    text-align: center;
+    width: 20%;
+    height: 380px;
+    
+}
+.cuadroBlanco3{
+    float: right;
+    background-color: rgba(235, 19, 19, 0.548);
+    align-items: center;
+    width: 20%;
+    height: 380px;
+    
+}
+.cuadroBlanco4{
+    float: right;
+    background-color: rgba(204, 52, 52, 0.548);
+    align-items: center;
+    width: 20%;
+    height: 380px;
+    
+}
+.cuadroBlanco5{
+    float: right;
+    background-color: rgba(235, 19, 19, 0.548);
+    align-items: center;
+    width: 20%;
+    height: 380px;  
+}
+.cuadroTra1{
+    float: right;
+    background-color:transparent;
+    align-items: center;
+    width: 10%;
+    height: 380px;  
+}
+.cuadroTra2{
+    float: right;
+    background-color:transparent;
+    align-items: center;
+    width: 10%;
+    height: 380px;  
+}
+.imgX{
+    height: 100%;
     width: 100%;
 }
 @media  (max-width: 419px) {
