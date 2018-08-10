@@ -9,28 +9,31 @@
 	box-sizing: border-box;
 }
 .imgBack{
-    position: relative;
-    background-color: rgb(255, 252, 58);
-    background-image: url('images/backd.jpeg');
+    position: static;
+    background-color: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-image: url(http://naroll.com.mx/wp-content/uploads/2018/01/slider1.jpeg);
     background-size: cover;
-    height: 670px;
+    background-position: center bottom;
     width: 100%;
+    height: 665px;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
 }
 .BoximgBack{
     position: absolute;
-    height: 500px;
-    width: 900px;
+    height: 100%;
     top: 400px;
-    left: 10%;
-    
+    left: 10%;  
 }
 .leterTitle{
     font-family: 'Philosopher', sans-serif;
     font-size: 100px;
-    color: rgb(192, 166, 166);
+    color: white;
 }
 .leterSub{
-    color: rgb(192, 166, 166);
+    color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 25px;
 }
@@ -148,7 +151,7 @@
   }
   .cuadroBlanco2{
     float: right;
-    background-color: rgba(204, 52, 52, 0.548);
+    
     text-align: center;
     width: 20%;
     height: 380px;
@@ -156,7 +159,7 @@
 }
 .cuadroBlanco3{
     float: right;
-    background-color: rgba(235, 19, 19, 0.548);
+    
     align-items: center;
     width: 20%;
     height: 380px;
@@ -164,7 +167,7 @@
 }
 .cuadroBlanco4{
     float: right;
-    background-color: rgba(204, 52, 52, 0.548);
+    
     align-items: center;
     width: 20%;
     height: 380px;
@@ -172,7 +175,7 @@
 }
 .cuadroBlanco5{
     float: right;
-    background-color: rgba(235, 19, 19, 0.548);
+    
     align-items: center;
     width: 20%;
     height: 380px;  
@@ -194,9 +197,45 @@
 .imgX{
     height: 100%;
     width: 100%;
+    padding: 15px 0;
+}
+.feet{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(127, 135, 149);
+
+}
+.footer{
+    position: relative;
+    top: 700px;
+    text-align: center;
+    height: 170px;
+    width: 100%;
+    background-color: teal;
+    
+}
+.footerDiv1{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 20px;
 }
 @media  (max-width: 419px) {
     .BoximgBack {
         left: 2%;
+        top: 220px;
+    }
+    .leterTitle{
+        font-size: 80px;
+    }
+    .leterSub{
+        font-size:19px;
+    }
+    .barblue{
+        width: 98%;
     }
 }
