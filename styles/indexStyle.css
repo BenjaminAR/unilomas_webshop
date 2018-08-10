@@ -102,13 +102,21 @@
 }
 .MoreVisSoon ul li img{
     position: relative;
-    left: 40PX;
+    left: 170px;
     height: 250px;
+    background-color: rgba(128, 128, 128, 0.438);
 }
 .MoreVisSoon{
     position: relative;
     top: 10px;
     align-items: center;
     align-content: center;
-
+    background-color: rgba(49, 49, 49, 0.548);
+    height: 250px;
+    width: 100%;
+}
+@media  (max-width: 600px) {
+    .BoximgBack {
+        left: 0%;
+    }
 }
