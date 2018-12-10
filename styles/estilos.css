@@ -22,18 +22,18 @@ header nav ul li {
 }
  
 header nav ul li:hover {
-    border-top: 4px solid rgb(71, 7, 65);
+    border-top: 2px solid rgb(71, 7, 65);
     background-color: rgba(75, 68, 77, 0.486);
 }
  
 header nav ul li a {
-    font-weight: 600;
+    font-weight: 550;
     font-style: normal;
     font-size: 27px;
-    color: green;
+    color: coral;
 	display:block;
     text-decoration:none;
-	padding:30px 40px;
+	padding: 15px 40px;
 }
 header nav ul li a:hover {
     color: rgb(107, 0, 128);
@@ -49,14 +49,14 @@ header nav ul li .children {
 	display: none;
 	background-color: rgb(214, 203, 203);
 	position: absolute;
-    width: 140%;
+    width: 100%;
 	z-index:1000;
 }
  
 header nav ul li .children li {
 	display:block;
     overflow: hidden;
-    height: 60px;
+    height: 50px;
     width: 100%;
     margin: 0;
 }
@@ -69,8 +69,8 @@ header nav ul li .children li a {
 #logo {
     top: 10px;
     position: absolute;
-    left: 50px;
-    height: 7px;
+    left: 40px;
+    height: 10px;
     transition: all ease .5s;
     z-index: 10;
 }

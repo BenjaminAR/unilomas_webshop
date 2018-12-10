@@ -16,7 +16,7 @@
     background-size: cover;
     background-position: center bottom;
     width: 100%;
-    height: 665px;
+    height: 560px;
     opacity: 1;
     visibility: inherit;
     z-index: 20;
@@ -24,7 +24,7 @@
 .BoximgBack{
     position: absolute;
     height: 100%;
-    top: 400px;
+    top: 47%;
     left: 10%;  
 }
 .leterTitle{
@@ -40,7 +40,7 @@
 .weAre{
     position: relative;
     background-size: contain;
-    top: 60px;
+    top: 100px;
     height: 500px;
     width: 100%;
 }
@@ -58,8 +58,9 @@
   ;
 }
 .imgCol2{
-    height: 100%;
-    width: 100%;
+
+    height: 80%;
+    width: 80%;
     align-items: center;
 }
 .divCol1Title{
@@ -214,7 +215,6 @@
     height: 170px;
     width: 100%;
     background-color: teal;
-    
 }
 .footerDiv1{
     font-family: 'Source Sans Pro', sans-serif;
