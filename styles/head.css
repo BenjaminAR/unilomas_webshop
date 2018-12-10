@@ -6,7 +6,7 @@
     transition: all ease .5s;
   }
 #nav.shrink {
-    height: 80px;
+    height: 64px;
     transition: all ease .5s;
     background: rgb(255, 255, 255); 
   }
