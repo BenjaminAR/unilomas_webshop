@@ -1,0 +1,160 @@
+:root {
+    --fuenteHeading: 'Lato', sans-serif;
+    --funeteParrafo: 'Lato', sans-serif;
+    --primario: #ED6E00;
+    --secundario: #58595b;
+    --backOscuro:#232323;
+    --primarioOpacity: #d36622;
+    --blanco: #fff;
+    --negro: #000;
+    --backObscuro: #332F21;
+    --backClaro: #e0e0e0;
+
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+
+html {
+    box-sizing: border-box;
+    /* Hacer que el paddig, border no afecte el acho de nuestros elementos */
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /* Hereda las propiedades del elemento padre que en este caso es el HTML */
+}
+
+body {
+    font-family: var(--funeteParrafo);
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    /* Interliniado entre fonts */
+}
+
+/* Globales */
+
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+    /* Para centrar los elementos hijos */
+}
+
+.contenedor-testimonios {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    /* Para centrar los elementos hijos */
+}
+
+
+.space-7 {
+    height: 7rem;
+    background-color: transparent;
+}
+
+.space-2 {
+    height: 2rem;
+    background-color: transparent;
+}
+
+
+.space-3 {
+    height: 3rem;
+    background-color: transparent;
+}
+
+.space-1 {
+    height: 2rem;
+    background-color: transparent;
+}
+
+
+.backClaro {
+    background-color: var(--backClaro);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.font-center {
+    text-align: center;
+}
+
+.contenedor-fluid {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--funeteParrafo);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+
+h2 {
+    font-size: 4rem;
+}
+
+
+h3 {
+    font-size: 3.2rem;
+}
+
+
+h4 {
+    font-size: 2.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Utilidades */
+
+.no-margin {
+    margin: 0;
+}
+
+.no-paddig {
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg {
+    background-color: rgba(0, 0, 0, 0.445);
+    height: 100%;
+}
+
+.p-3 {
+    padding-top: 3rem;
+}
+
+.m-3 {
+    margin: 3rem 0;
+}
+
+.m-5 {
+    margin: 5rem 0;
+}

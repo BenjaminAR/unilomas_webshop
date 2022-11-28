@@ -1,165 +1,188 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
-.menu_bar {
-    font-family: 'Source Sans Pro', sans-serif;
-	display:none;
+body {
+	background-color: #EEEEEE;
 }
- 
-header nav {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color:transparent;
+
+.menu_bar {
+	font-family: 'Source Sans Pro', sans-serif;
+	display: none;
+}
+
+
+.logo-header {
+	height: 4rem;
+}
+
+
+#menu {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
 }
 
 header nav ul {
-	list-style:none;
-}
- 
-header nav ul li {
-	display:inline-block;
-    position: relative;
-    float: right;
-    margin-right: 40px;
-}
- 
-header nav ul li:hover {
-    border-top: 2px solid rgb(71, 7, 65);
-    background-color: rgba(75, 68, 77, 0.486);
-}
- 
-header nav ul li a {
-    font-weight: 550;
-    font-style: normal;
-    font-size: 27px;
-    color: coral;
-	display:block;
-    text-decoration:none;
-	padding: 15px 40px;
-}
-header nav ul li a:hover {
-    color: rgb(107, 0, 128);
-}
-header nav ul li a span {
-	margin-right:0px;
-}
-header nav ul li:hover .children {
-	display:block;
+	list-style: none;
 }
 
-header nav ul li .children {
-	display: none;
-	background-color: rgb(214, 203, 203);
-	position: absolute;
-    width: 100%;
-	z-index:1000;
+header nav ul li {
+	display: block;
+	float: right;
+	margin-right: 4rem;
 }
- 
-header nav ul li .children li {
-	display:block;
-    overflow: hidden;
-    height: 50px;
-    width: 100%;
-    margin: 0;
+
+a {
+	font-style: normal;
+	color: var(--secundario);
+	display: block;
+	text-decoration: none;
 }
- 
-header nav ul li .children li a {
-    padding: 12px;
-    font-size: 19px;
+
+
+a:hover {
+	color: var(--primario);
+}
+
+
+li:hover .children {
 	display: block;
 }
+
+.children {
+	display: none;
+	background-color: #EEEEEE;
+	position: absolute;
+	max-width: 20rem;
+	z-index: 999;
+	padding: 0;
+	-webkit-box-shadow: 0px 13px 5px -3px rgba(0, 0, 0, 0.17);
+	-moz-box-shadow: 0px 13px 5px -3px rgba(0, 0, 0, 0.17);
+	box-shadow: 0px 13px 5px -3px rgba(0, 0, 0, 0.17);
+}
+
+.children li:first-child {
+	border-top: none;
+}
+
+.children li {
+	display: block;
+	height: auto;
+	margin-bottom: .5rem;
+	width: 100%;
+}
+
+.children li a {
+	text-align: center;
+}
+
+.children li a:first-child {
+	margin-top: 2rem;
+}
+
+.children li a:last-child {
+	margin-bottom: 1rem;
+}
+
 #logo {
-    top: 10px;
-    position: absolute;
-    left: 40px;
-    height: 10px;
-    transition: all ease .5s;
-    z-index: 10;
+	top: 10px;
+	position: absolute;
+	left: 40px;
+	height: 10px;
+	transition: all ease .5s;
+	z-index: 10;
 }
 
 @media screen and (max-width:1058px) {
 
 	.menu_bar {
-		display:block;
-		width:100%;
+		display: block;
+		width: 100%;
 		position: fixed;
-		top:0;
-		background:transparent;
-    }
-    #logo{
-        display: none;
-    }
- 
+		top: 0;
+		background: transparent;
+	}
+
+	#logo {
+		display: none;
+	}
+
 	.menu_bar .bt-menu {
 		display: block;
 		padding: 20px;
-        color: rgb(0, 255, 21);
+		color: rgb(0, 255, 21);
 		overflow: hidden;
 		font-size: 25px;
 		font-weight: bold;
 		text-decoration: none;
-    }
- 
+	}
+
 	.menu_bar img {
 		float: right;
 	}
- 
+
 	header nav {
 		width: 80%;
-		height: calc(100% - 80px);
+		height: calc(100% - 7rem);
 		position: fixed;
-		right:100%;
+		right: 100%;
 		margin: 0;
-		overflow: scroll;
 	}
- 
+
 	header nav ul li {
-        width: 100%;
+		width: 100%;
 		display: block;
-        border-bottom:1px solid rgba(255,255,255,.5);
-        background-color: rgba(236, 79, 79, 0.842);
-    }
-    header nav ul li:hover {
-        background-color: rgba(236, 49, 49, 0.842);
+		border-bottom: 1px solid rgba(255, 255, 255, .5);
+		background-color: rgba(236, 79, 79, 0.842);
 	}
- 
+
+	header nav ul li:hover {
+		background-color: rgba(236, 49, 49, 0.842);
+	}
+
 	header nav ul li a {
-        display: block;
-        font-size: 27px;
+		display: block;
+		font-size: 27px;
 	}
- 
+
 	header nav ul li:hover .children {
 		display: none;
 	}
- 
+
 	header nav ul li .children {
 		width: 100%;
 		position: relative;
 	}
- 
+
 	header nav ul li .children li a {
 		margin-left: 15px;
 	}
- 
+
 	header nav ul li .caret {
 		float: right;
 	}
 }
-@media  (max-width: 1288px) {
-    header nav ul li {
-        margin-right: 30px;
-    }
+
+@media (max-width: 1288px) {
+	header nav ul li {
+		margin-right: 30px;
+	}
 }
-@media  (max-width: 1233px) {
-    header nav ul li {
-        margin-right: 20px;
-    }
+
+@media (max-width: 1233px) {
+	header nav ul li {
+		margin-right: 20px;
+	}
 }
-@media  (max-width: 1178px) {
-    header nav ul li {
-        margin-right: 10px;
-    }
+
+@media (max-width: 1178px) {
+	header nav ul li {
+		margin-right: 10px;
+	}
 }
-@media  (max-width: 1068px) {
-    header nav ul li {
-        margin-right: 0px;
-    }
+
+@media (max-width: 1068px) {
+	header nav ul li {
+		margin-right: 0px;
+	}
 }
