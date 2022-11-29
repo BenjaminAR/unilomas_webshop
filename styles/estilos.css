@@ -33,7 +33,6 @@ header nav ul li {
 }
 
 a {
-	font-style: normal;
 	color: var(--secundario);
 	display: block;
 	text-decoration: none;
@@ -49,16 +48,29 @@ li:hover .children {
 	display: block;
 }
 
+
+
 .children {
 	display: none;
-	background-color: #EEEEEE;
 	position: absolute;
-	max-width: 20rem;
 	z-index: 999;
 	padding: 0;
-	-webkit-box-shadow: 0px 13px 5px -3px rgba(0, 0, 0, 0.17);
-	-moz-box-shadow: 0px 13px 5px -3px rgba(0, 0, 0, 0.17);
-	box-shadow: 0px 13px 5px -3px rgba(0, 0, 0, 0.17);
+}
+
+@media (min-width: 1058px) {
+	.children {
+		max-width: 20rem;
+	}
+}
+
+
+@media (min-width: 1059px) {
+	.children {
+		background-color: #EEEEEE;
+		-webkit-box-shadow: 0px 13px 5px -3px rgba(0, 0, 0, 0.17);
+		-moz-box-shadow: 0px 13px 5px -3px rgba(0, 0, 0, 0.17);
+		box-shadow: 0px 13px 5px -3px rgba(0, 0, 0, 0.17);
+	}
 }
 
 .children li:first-child {
@@ -80,8 +92,10 @@ li:hover .children {
 	margin-top: 2rem;
 }
 
-.children li a:last-child {
-	margin-bottom: 1rem;
+@media (min-width: 1059px) {
+	.children li a:last-child {
+		margin-bottom: 1rem;
+	}
 }
 
 #logo {
@@ -100,57 +114,65 @@ li:hover .children {
 		width: 100%;
 		position: fixed;
 		top: 0;
-		background: transparent;
+
 	}
 
 	#logo {
 		display: none;
 	}
 
-	.menu_bar .bt-menu {
-		display: block;
-		padding: 20px;
-		color: rgb(0, 255, 21);
-		overflow: hidden;
-		font-size: 25px;
-		font-weight: bold;
-		text-decoration: none;
+	#logoResponsive {
+		padding: 1.8rem;
 	}
 
-	.menu_bar img {
+	.bt-menu {
+		display: block;
+		padding: 2.2rem;
+		color: var(--primario);
 		float: right;
+		font-size: 2.6rem;
+	}
+
+	.submenu {
+		width: 100%;
+	}
+
+	.submenu ul li a {
+		font-size: 2.4rem;
+		padding-left: 1rem;
+		text-align: center;
 	}
 
 	header nav {
-		width: 80%;
+		width: 78%;
 		height: calc(100% - 7rem);
 		position: fixed;
 		right: 100%;
 		margin: 0;
+		background: #ffffff;
+		background: -webkit-linear-gradient(0deg, #ffffff 0%, #ffffff 50%, rgba(255, 255, 255, 0) 100%);
+		background: linear-gradient(0deg, #ffffff 0%, #ffffff 58%, rgba(255, 255, 255, 0) 100%);
 	}
 
 	header nav ul li {
 		width: 100%;
 		display: block;
-		border-bottom: 1px solid rgba(255, 255, 255, .5);
-		background-color: rgba(236, 79, 79, 0.842);
 	}
 
-	header nav ul li:hover {
-		background-color: rgba(236, 49, 49, 0.842);
-	}
 
 	header nav ul li a {
+		text-align: center;
+		margin: 1.2rem 0rem;
 		display: block;
-		font-size: 27px;
+		font-size: 3rem;
 	}
 
 	header nav ul li:hover .children {
 		display: none;
 	}
 
-	header nav ul li .children {
-		width: 100%;
+	.children {
+
 		position: relative;
 	}
 
@@ -172,17 +194,5 @@ li:hover .children {
 @media (max-width: 1233px) {
 	header nav ul li {
 		margin-right: 20px;
-	}
-}
-
-@media (max-width: 1178px) {
-	header nav ul li {
-		margin-right: 10px;
-	}
-}
-
-@media (max-width: 1068px) {
-	header nav ul li {
-		margin-right: 0px;
 	}
 }
